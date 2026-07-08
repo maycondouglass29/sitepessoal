@@ -66,30 +66,50 @@ export const QUALITIES = [
   },
 ] as const;
 
-export const SKILLS_DEV = [
-  "Desenvolvimento Full Stack",
-  "Arquitetura SaaS Multi-tenant",
-  "React",
-  "Node.js",
-  "PostgreSQL",
-  "Prisma",
-  "Supabase",
-  "Integração de IA (Gemini)",
-  "Automação de Pagamentos (Stripe/Cakto)",
+export const SKILLS_FRONTEND = [
+  "React / Next.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Vite",
+  "Radix UI / shadcn/ui",
   "UX/UI Design",
-  "Interfaces Responsivas",
+  "Design Responsivo & Mobile-First",
+  "Design System & Componentização",
+] as const;
+
+export const SKILLS_BACKEND = [
+  "Node.js / Express",
+  "PostgreSQL",
+  "Prisma ORM",
+  "Supabase (BaaS)",
+  "Docker & Docker Compose",
+  "Deploy VPS (Linux/Ubuntu/PM2)",
+  "Arquitetura SaaS Multi-Tenant",
+  "Autenticação & RBAC (RLS)",
+  "API REST & Webhooks",
+  "Stripe (Billing & Subscriptions)",
+] as const;
+
+export const SKILLS_AI = [
+  "Google Gemini API",
+  "OpenAI GPT-4o",
+  "Ollama (LLMs Locais)",
+  "Sistemas Multi-Agente (C-Suite IA)",
+  "RAG (Retrieval-Augmented Generation)",
+  "OCR & Extração Inteligente de Dados",
+  "Automação com IA (Bots & Workflows)",
+  "Análise de Dados com IA (RadBERT)",
 ] as const;
 
 export const SKILLS_MARKETING = [
-  "Google Ads",
+  "Google Ads (Certificado)",
   "Meta Ads (Facebook/Instagram)",
   "Gestão de Tráfego Pago",
-  "Copywriting",
-  "SEO",
-  "Automação de Vendas",
+  "SEO & Otimização de Conversão",
+  "Copywriting Persuasivo",
+  "Automação de Vendas & CRM",
   "Funis de Conversão",
-  "Retenção de Clientes",
-  "Atendimento Personalizado",
+  "Growth Hacking & Analytics",
 ] as const;
 
 export const EXPERIENCE = [
