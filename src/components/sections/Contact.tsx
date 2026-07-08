@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { BUSINESS } from "@/lib/constants";
@@ -38,6 +39,17 @@ export function Contact() {
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
           {/* Contact Info */}
           <ScrollReveal variant="left" className="lg:col-span-2 space-y-8">
+            {/* Profile Photo */}
+            <div className="relative w-20 h-20 overflow-hidden border border-gold/30">
+              <Image
+                src="/images/profile-contact.jpg"
+                alt={BUSINESS.name}
+                fill
+                className="object-cover object-top"
+                sizes="80px"
+              />
+            </div>
+
             <div>
               <h3 className="font-mono text-sm tracking-[0.15em] uppercase text-subtle mb-2">
                 Email

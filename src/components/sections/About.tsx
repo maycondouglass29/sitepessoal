@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { BUSINESS, CERTIFICATIONS } from "@/lib/constants";
@@ -19,16 +20,16 @@ export function About() {
           <ScrollReveal variant="left" className="lg:col-span-2">
             <div className="relative">
               <div className="aspect-[3/4] bg-gradient-to-br from-surface-elevated to-background border border-border overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="font-display text-8xl font-bold text-gold/20">
-                      MD
-                    </span>
-                  </div>
-                </div>
-                <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-gold" />
-                <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-gold" />
+                <Image
+                  src="/images/profile-about.jpg"
+                  alt={`${BUSINESS.name} — Desenvolvedor Full Stack e Especialista em Marketing Digital`}
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
               </div>
+              <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-gold" />
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-gold" />
               <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/20 -z-10" />
             </div>
           </ScrollReveal>
